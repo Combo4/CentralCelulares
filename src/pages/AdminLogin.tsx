@@ -12,7 +12,8 @@ export default function AdminLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const { signIn } = useAuth();
+  const [isSignUp, setIsSignUp] = useState(false);
+  const { signIn, signUp } = useAuth();
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -20,16 +21,32 @@ export default function AdminLogin() {
     e.preventDefault();
     setIsLoading(true);
 
-    const { error } = await signIn(email, password);
-    
-    if (error) {
-      toast({
-        title: "Login failed",
-        description: error.message,
-        variant: "destructive",
-      });
+    if (isSignUp) {
+      const { error } = await signUp(email, password);
+      if (error) {
+        toast({
+          title: "Sign up failed",
+          description: error.message,
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Account created!",
+          description: "You can now sign in. Note: An existing admin must grant you admin access.",
+        });
+        setIsSignUp(false);
+      }
     } else {
-      navigate("/admin/dashboard");
+      const { error } = await signIn(email, password);
+      if (error) {
+        toast({
+          title: "Login failed",
+          description: error.message,
+          variant: "destructive",
+        });
+      } else {
+        navigate("/admin/dashboard");
+      }
     }
     
     setIsLoading(false);
@@ -42,8 +59,12 @@ export default function AdminLogin() {
           <div className="w-16 h-16 rounded-2xl gradient-primary flex items-center justify-center mx-auto mb-4">
             <Phone className="w-8 h-8 text-primary-foreground" />
           </div>
-          <CardTitle className="font-display text-2xl">Admin Login</CardTitle>
-          <CardDescription>Sign in to manage your phone catalog</CardDescription>
+          <CardTitle className="font-display text-2xl">
+            {isSignUp ? "Create Account" : "Admin Login"}
+          </CardTitle>
+          <CardDescription>
+            {isSignUp ? "Create an account to request admin access" : "Sign in to manage your phone catalog"}
+          </CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -67,13 +88,23 @@ export default function AdminLogin() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
+                minLength={6}
               />
             </div>
             <Button type="submit" className="w-full gradient-primary" disabled={isLoading}>
               {isLoading && <Loader2 className="w-4 h-4 mr-2 animate-spin" />}
-              Sign In
+              {isSignUp ? "Create Account" : "Sign In"}
             </Button>
           </form>
+          <div className="mt-4 text-center">
+            <button
+              type="button"
+              onClick={() => setIsSignUp(!isSignUp)}
+              className="text-sm text-muted-foreground hover:text-primary transition-colors"
+            >
+              {isSignUp ? "Already have an account? Sign in" : "Need an account? Sign up"}
+            </button>
+          </div>
         </CardContent>
       </Card>
     </div>
