@@ -1,0 +1,124 @@
+import { Navbar } from "@/components/Navbar";
+import { PhoneCard } from "@/components/PhoneCard";
+import { usePhones, useBrands } from "@/hooks/usePhones";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Search, SlidersHorizontal, X } from "lucide-react";
+import { useState } from "react";
+import type { PhoneFilters } from "@/types/database";
+
+export default function Catalog() {
+  const [filters, setFilters] = useState<PhoneFilters>({});
+  const [showFilters, setShowFilters] = useState(false);
+  const { data: phones, isLoading } = usePhones(filters);
+  const { data: brands } = useBrands();
+
+  const updateFilter = <K extends keyof PhoneFilters>(key: K, value: PhoneFilters[K]) => {
+    setFilters((prev) => ({ ...prev, [key]: value }));
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+
+      <div className="container mx-auto px-4 py-8">
+        <div className="flex flex-col md:flex-row gap-8">
+          {/* Filters Sidebar */}
+          <aside className={`md:w-64 shrink-0 ${showFilters ? "block" : "hidden md:block"}`}>
+            <div className="sticky top-24 space-y-6">
+              <div className="flex items-center justify-between">
+                <h2 className="font-display font-bold text-lg">Filters</h2>
+                <Button variant="ghost" size="sm" onClick={() => setFilters({})}>
+                  Clear All
+                </Button>
+              </div>
+
+              <div className="space-y-4">
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                  <Input
+                    placeholder="Search phones..."
+                    className="pl-10"
+                    value={filters.search || ""}
+                    onChange={(e) => updateFilter("search", e.target.value)}
+                  />
+                </div>
+
+                <div>
+                  <Label className="text-sm font-medium mb-2 block">Brands</Label>
+                  <div className="space-y-2">
+                    {brands?.map((brand) => (
+                      <div key={brand.id} className="flex items-center gap-2">
+                        <Checkbox
+                          id={brand.id}
+                          checked={filters.brands?.includes(brand.id)}
+                          onCheckedChange={(checked) => {
+                            const current = filters.brands || [];
+                            updateFilter(
+                              "brands",
+                              checked ? [...current, brand.id] : current.filter((id) => id !== brand.id)
+                            );
+                          }}
+                        />
+                        <Label htmlFor={brand.id} className="text-sm cursor-pointer">{brand.name}</Label>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <Label className="text-sm font-medium mb-2 block">Sort By</Label>
+                  <Select value={filters.sortBy || ""} onValueChange={(v) => updateFilter("sortBy", v as PhoneFilters["sortBy"])}>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Default" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="newest">Newest First</SelectItem>
+                      <SelectItem value="price_asc">Price: Low to High</SelectItem>
+                      <SelectItem value="price_desc">Price: High to Low</SelectItem>
+                      <SelectItem value="popular">Most Popular</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          {/* Products Grid */}
+          <main className="flex-1">
+            <div className="flex items-center justify-between mb-6">
+              <p className="text-muted-foreground">
+                {phones?.length || 0} phones found
+              </p>
+              <Button variant="outline" className="md:hidden" onClick={() => setShowFilters(!showFilters)}>
+                <SlidersHorizontal className="w-4 h-4 mr-2" />
+                Filters
+              </Button>
+            </div>
+
+            {isLoading ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[...Array(6)].map((_, i) => (
+                  <div key={i} className="h-80 bg-secondary animate-pulse rounded-xl" />
+                ))}
+              </div>
+            ) : phones && phones.length > 0 ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {phones.map((phone) => (
+                  <PhoneCard key={phone.id} phone={phone} />
+                ))}
+              </div>
+            ) : (
+              <div className="text-center py-16 text-muted-foreground">
+                <p>No phones found matching your criteria.</p>
+              </div>
+            )}
+          </main>
+        </div>
+      </div>
+    </div>
+  );
+}
