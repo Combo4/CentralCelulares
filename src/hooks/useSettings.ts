@@ -1,5 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
-import { useQuery } from "@tanstack/react-query";
+import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import type { Setting } from "@/types/database";
 
 export function useSettings() {
@@ -21,9 +21,39 @@ export function useWhatsAppNumber() {
         .from("settings")
         .select("value")
         .eq("key", "whatsapp_number")
-        .single();
+        .maybeSingle();
       if (error) throw error;
       return data?.value || "";
+    },
+  });
+}
+
+export function useUpdateSetting() {
+  const queryClient = useQueryClient();
+  return useMutation({
+    mutationFn: async ({ key, value }: { key: string; value: string }) => {
+      // Try to update first, if no rows affected, insert
+      const { data: existing } = await supabase
+        .from("settings")
+        .select("id")
+        .eq("key", key)
+        .maybeSingle();
+
+      if (existing) {
+        const { error } = await supabase
+          .from("settings")
+          .update({ value, updated_at: new Date().toISOString() })
+          .eq("key", key);
+        if (error) throw error;
+      } else {
+        const { error } = await supabase
+          .from("settings")
+          .insert({ key, value });
+        if (error) throw error;
+      }
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["settings"] });
     },
   });
 }
