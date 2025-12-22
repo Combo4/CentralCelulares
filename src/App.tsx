@@ -8,6 +8,10 @@ import Catalog from "./pages/Catalog";
 import PhoneDetail from "./pages/PhoneDetail";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import AdminPhones from "./pages/AdminPhones";
+import AdminCampaigns from "./pages/AdminCampaigns";
+import AdminSettings from "./pages/AdminSettings";
+import AdminAnalytics from "./pages/AdminAnalytics";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +28,10 @@ const App = () => (
           <Route path="/phone/:id" element={<PhoneDetail />} />
           <Route path="/admin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/phones" element={<AdminPhones />} />
+          <Route path="/admin/campaigns" element={<AdminCampaigns />} />
+          <Route path="/admin/settings" element={<AdminSettings />} />
+          <Route path="/admin/analytics" element={<AdminAnalytics />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
