@@ -2,7 +2,8 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import type { Phone, PhoneWithBrand, PhoneFilters, Brand } from "@/types/database";
 
 async function fetchPhonesFromJson(): Promise<PhoneWithBrand[]> {
-  const response = await fetch("/data/products.json");
+  const url = `${import.meta.env.BASE_URL}data/products.json`;
+  const response = await fetch(url);
   if (!response.ok) {
     throw new Error("Failed to load products.json");
   }
