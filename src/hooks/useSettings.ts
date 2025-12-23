@@ -1,56 +1,31 @@
-import { supabase } from "@/integrations/supabase/client";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import type { Setting } from "@/types/database";
 
+// In JSON-only mode we don't persist settings in a database.
+// Configure the WhatsApp number via VITE_WHATSAPP_NUMBER in a .env file.
+const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || "";
+
 export function useSettings() {
-  return useQuery({
+  // Return an empty settings array to keep the admin UI from crashing.
+  return useQuery<Setting[]>({
     queryKey: ["settings"],
-    queryFn: async () => {
-      const { data, error } = await supabase.from("settings").select("*");
-      if (error) throw error;
-      return data as Setting[];
-    },
+    queryFn: async () => [],
   });
 }
 
 export function useWhatsAppNumber() {
   return useQuery({
     queryKey: ["settings", "whatsapp_number"],
-    queryFn: async () => {
-      const { data, error } = await supabase
-        .from("settings")
-        .select("value")
-        .eq("key", "whatsapp_number")
-        .maybeSingle();
-      if (error) throw error;
-      return data?.value || "";
-    },
+    queryFn: async () => WHATSAPP_NUMBER,
   });
 }
 
 export function useUpdateSetting() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async ({ key, value }: { key: string; value: string }) => {
-      // Try to update first, if no rows affected, insert
-      const { data: existing } = await supabase
-        .from("settings")
-        .select("id")
-        .eq("key", key)
-        .maybeSingle();
-
-      if (existing) {
-        const { error } = await supabase
-          .from("settings")
-          .update({ value, updated_at: new Date().toISOString() })
-          .eq("key", key);
-        if (error) throw error;
-      } else {
-        const { error } = await supabase
-          .from("settings")
-          .insert({ key, value });
-        if (error) throw error;
-      }
+    mutationFn: async (_payload: { key: string; value: string }) => {
+      // No-op: settings are not persisted without a database.
+      return;
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["settings"] });

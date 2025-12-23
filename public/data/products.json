@@ -1,0 +1,1538 @@
+[
+  {
+    "id": "1",
+    "brand_id": "iphone",
+    "model": "iPhone 13 64GB",
+    "price": 4176612,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de iPhone iPhone 13 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-13-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "2",
+    "brand_id": "iphone",
+    "model": "iPhone 13 128GB",
+    "price": 2962281,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de iPhone iPhone 13 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-13-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "3",
+    "brand_id": "iphone",
+    "model": "iPhone 13 256GB",
+    "price": 2185482,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de iPhone iPhone 13 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-13-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "4",
+    "brand_id": "iphone",
+    "model": "iPhone 14 64GB",
+    "price": 4853285,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de iPhone iPhone 14 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-14-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "5",
+    "brand_id": "iphone",
+    "model": "iPhone 14 128GB",
+    "price": 3735676,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de iPhone iPhone 14 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-14-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "6",
+    "brand_id": "iphone",
+    "model": "iPhone 14 256GB",
+    "price": 3160533,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de iPhone iPhone 14 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-14-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "7",
+    "brand_id": "iphone",
+    "model": "iPhone 15 64GB",
+    "price": 3766138,
+    "sale_price": 2855726,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de iPhone iPhone 15 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-15-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "8",
+    "brand_id": "iphone",
+    "model": "iPhone 15 128GB",
+    "price": 6822897,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de iPhone iPhone 15 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-15-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "9",
+    "brand_id": "iphone",
+    "model": "iPhone 15 256GB",
+    "price": 6138014,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de iPhone iPhone 15 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-15-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.300Z",
+    "updated_at": "2025-12-23T15:48:45.300Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.300Z"
+    }
+  },
+  {
+    "id": "10",
+    "brand_id": "iphone",
+    "model": "iPhone 15 Pro 64GB",
+    "price": 7374395,
+    "sale_price": 5621477,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de iPhone iPhone 15 Pro 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-15-Pro-64GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "11",
+    "brand_id": "iphone",
+    "model": "iPhone 15 Pro 128GB",
+    "price": 2112794,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de iPhone iPhone 15 Pro 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-15-Pro-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "12",
+    "brand_id": "iphone",
+    "model": "iPhone 15 Pro 256GB",
+    "price": 2699911,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.1 pulgadas Super Retina XDR",
+    "processor": "A16 Bionic",
+    "ram": "6GB",
+    "camera": "48MP",
+    "battery": "3279 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de iPhone iPhone 15 Pro 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/iphone-iPhone-15-Pro-256GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "iphone",
+      "name": "iPhone",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "13",
+    "brand_id": "samsung",
+    "model": "Galaxy S22 64GB",
+    "price": 6740611,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Samsung Galaxy S22 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-S22-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "14",
+    "brand_id": "samsung",
+    "model": "Galaxy S22 128GB",
+    "price": 1722761,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Samsung Galaxy S22 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-S22-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "15",
+    "brand_id": "samsung",
+    "model": "Galaxy S22 256GB",
+    "price": 2216720,
+    "sale_price": 1787552,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Samsung Galaxy S22 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-S22-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "16",
+    "brand_id": "samsung",
+    "model": "Galaxy S23 64GB",
+    "price": 6807351,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Samsung Galaxy S23 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-S23-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "17",
+    "brand_id": "samsung",
+    "model": "Galaxy S23 128GB",
+    "price": 4380839,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Samsung Galaxy S23 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-S23-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "18",
+    "brand_id": "samsung",
+    "model": "Galaxy S23 256GB",
+    "price": 2349357,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Samsung Galaxy S23 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-S23-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "19",
+    "brand_id": "samsung",
+    "model": "Galaxy A54 64GB",
+    "price": 3265055,
+    "sale_price": 2576490,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Samsung Galaxy A54 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-A54-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "20",
+    "brand_id": "samsung",
+    "model": "Galaxy A54 128GB",
+    "price": 2639621,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Samsung Galaxy A54 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-A54-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "21",
+    "brand_id": "samsung",
+    "model": "Galaxy A54 256GB",
+    "price": 5181436,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Samsung Galaxy A54 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-A54-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "22",
+    "brand_id": "samsung",
+    "model": "Galaxy A34 64GB",
+    "price": 5481873,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Samsung Galaxy A34 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-A34-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "23",
+    "brand_id": "samsung",
+    "model": "Galaxy A34 128GB",
+    "price": 5883461,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Samsung Galaxy A34 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-A34-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "24",
+    "brand_id": "samsung",
+    "model": "Galaxy A34 256GB",
+    "price": 2071932,
+    "sale_price": 1853795,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.4 pulgadas AMOLED",
+    "processor": "Exynos / Snapdragon",
+    "ram": "8GB",
+    "camera": "50MP",
+    "battery": "4500 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Samsung Galaxy A34 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/samsung-Galaxy-A34-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "samsung",
+      "name": "Samsung",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "25",
+    "brand_id": "xiaomi",
+    "model": "Redmi Note 11 64GB",
+    "price": 2151346,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Xiaomi Redmi Note 11 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Redmi-Note-11-64GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "26",
+    "brand_id": "xiaomi",
+    "model": "Redmi Note 11 128GB",
+    "price": 5514083,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Xiaomi Redmi Note 11 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Redmi-Note-11-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "27",
+    "brand_id": "xiaomi",
+    "model": "Redmi Note 11 256GB",
+    "price": 6636352,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Xiaomi Redmi Note 11 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Redmi-Note-11-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "28",
+    "brand_id": "xiaomi",
+    "model": "Redmi Note 12 64GB",
+    "price": 6827400,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Xiaomi Redmi Note 12 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Redmi-Note-12-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "29",
+    "brand_id": "xiaomi",
+    "model": "Redmi Note 12 128GB",
+    "price": 6222496,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Xiaomi Redmi Note 12 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Redmi-Note-12-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "30",
+    "brand_id": "xiaomi",
+    "model": "Redmi Note 12 256GB",
+    "price": 2625134,
+    "sale_price": 1877179,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Xiaomi Redmi Note 12 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Redmi-Note-12-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "31",
+    "brand_id": "xiaomi",
+    "model": "Poco X5 64GB",
+    "price": 5599792,
+    "sale_price": 3894109,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2020,
+    "description": "Ejemplo de Xiaomi Poco X5 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Poco-X5-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "32",
+    "brand_id": "xiaomi",
+    "model": "Poco X5 128GB",
+    "price": 6064603,
+    "sale_price": 4810572,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Xiaomi Poco X5 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Poco-X5-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "33",
+    "brand_id": "xiaomi",
+    "model": "Poco X5 256GB",
+    "price": 7443201,
+    "sale_price": 5555065,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Xiaomi Poco X5 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Poco-X5-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "34",
+    "brand_id": "xiaomi",
+    "model": "Poco F5 64GB",
+    "price": 1955914,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2023,
+    "description": "Ejemplo de Xiaomi Poco F5 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Poco-F5-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "35",
+    "brand_id": "xiaomi",
+    "model": "Poco F5 128GB",
+    "price": 2084256,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Xiaomi Poco F5 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Poco-F5-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "36",
+    "brand_id": "xiaomi",
+    "model": "Poco F5 256GB",
+    "price": 3922171,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.67 pulgadas AMOLED",
+    "processor": "Snapdragon",
+    "ram": "6GB",
+    "camera": "64MP",
+    "battery": "5000 mAh",
+    "release_year": 2020,
+    "description": "Ejemplo de Xiaomi Poco F5 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/xiaomi-Poco-F5-256GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "xiaomi",
+      "name": "Xiaomi",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "37",
+    "brand_id": "motorola",
+    "model": "Moto G32 64GB",
+    "price": 3920324,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2020,
+    "description": "Ejemplo de Motorola Moto G32 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-G32-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "38",
+    "brand_id": "motorola",
+    "model": "Moto G32 128GB",
+    "price": 2403708,
+    "sale_price": 1864397,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2020,
+    "description": "Ejemplo de Motorola Moto G32 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-G32-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "39",
+    "brand_id": "motorola",
+    "model": "Moto G32 256GB",
+    "price": 1708198,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Motorola Moto G32 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-G32-256GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "40",
+    "brand_id": "motorola",
+    "model": "Moto G54 64GB",
+    "price": 7334173,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Motorola Moto G54 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-G54-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "41",
+    "brand_id": "motorola",
+    "model": "Moto G54 128GB",
+    "price": 4767623,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2022,
+    "description": "Ejemplo de Motorola Moto G54 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-G54-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "42",
+    "brand_id": "motorola",
+    "model": "Moto G54 256GB",
+    "price": 4521627,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Motorola Moto G54 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-G54-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "43",
+    "brand_id": "motorola",
+    "model": "Moto Edge 40 64GB",
+    "price": 2613733,
+    "sale_price": null,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2020,
+    "description": "Ejemplo de Motorola Moto Edge 40 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-Edge-40-64GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "44",
+    "brand_id": "motorola",
+    "model": "Moto Edge 40 128GB",
+    "price": 6883702,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Motorola Moto Edge 40 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-Edge-40-128GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "45",
+    "brand_id": "motorola",
+    "model": "Moto Edge 40 256GB",
+    "price": 7208520,
+    "sale_price": 5586368,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Motorola Moto Edge 40 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-Edge-40-256GB.png"
+    ],
+    "is_featured": false,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "46",
+    "brand_id": "motorola",
+    "model": "Moto E13 64GB",
+    "price": 5372071,
+    "sale_price": 3770309,
+    "storage_options": [
+      "64GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Motorola Moto E13 64GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-E13-64GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "47",
+    "brand_id": "motorola",
+    "model": "Moto E13 128GB",
+    "price": 1859696,
+    "sale_price": null,
+    "storage_options": [
+      "128GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Motorola Moto E13 128GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-E13-128GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  },
+  {
+    "id": "48",
+    "brand_id": "motorola",
+    "model": "Moto E13 256GB",
+    "price": 7234539,
+    "sale_price": null,
+    "storage_options": [
+      "256GB"
+    ],
+    "display_size": "6.5 pulgadas IPS",
+    "processor": "MediaTek",
+    "ram": "4GB",
+    "camera": "50MP",
+    "battery": "5000 mAh",
+    "release_year": 2021,
+    "description": "Ejemplo de Motorola Moto E13 256GB con especificaciones típicas.",
+    "images": [
+      "/images/products/motorola-Moto-E13-256GB.png"
+    ],
+    "is_featured": true,
+    "is_published": true,
+    "view_count": 0,
+    "click_count": 0,
+    "created_at": "2025-12-23T15:48:45.301Z",
+    "updated_at": "2025-12-23T15:48:45.301Z",
+    "brand": {
+      "id": "motorola",
+      "name": "Motorola",
+      "logo_url": null,
+      "created_at": "2025-12-23T15:48:45.301Z"
+    }
+  }
+]

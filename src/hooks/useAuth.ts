@@ -1,72 +1,10 @@
-import { supabase } from "@/integrations/supabase/client";
-import { useQuery } from "@tanstack/react-query";
-import { useEffect, useState } from "react";
-import { User, Session } from "@supabase/supabase-js";
+// Admin authentication hooks are no longer used now that the admin panel has been removed.
+// This file is kept as a stub to avoid breaking any stray imports.
 
 export function useAuth() {
-  const [user, setUser] = useState<User | null>(null);
-  const [session, setSession] = useState<Session | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Set up auth state listener FIRST
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (event, session) => {
-        setSession(session);
-        setUser(session?.user ?? null);
-        setLoading(false);
-      }
-    );
-
-    // THEN check for existing session
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setSession(session);
-      setUser(session?.user ?? null);
-      setLoading(false);
-    });
-
-    return () => subscription.unsubscribe();
-  }, []);
-
-  const signIn = async (email: string, password: string) => {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    return { error };
-  };
-
-  const signUp = async (email: string, password: string) => {
-    const redirectUrl = `${window.location.origin}/`;
-    const { error } = await supabase.auth.signUp({
-      email,
-      password,
-      options: { emailRedirectTo: redirectUrl },
-    });
-    return { error };
-  };
-
-  const signOut = async () => {
-    const { error } = await supabase.auth.signOut();
-    return { error };
-  };
-
-  return { user, session, loading, signIn, signUp, signOut };
+  return { user: null, session: null, loading: false, signIn: async () => ({}), signUp: async () => ({}), signOut: async () => ({}) };
 }
 
 export function useIsAdmin() {
-  const { user } = useAuth();
-
-  return useQuery({
-    queryKey: ["user_role", user?.id],
-    queryFn: async () => {
-      if (!user) return false;
-      const { data, error } = await supabase
-        .from("user_roles")
-        .select("role")
-        .eq("user_id", user.id)
-        .eq("role", "admin")
-        .maybeSingle();
-      if (error) throw error;
-      return !!data;
-    },
-    enabled: !!user,
-  });
+  return { data: false, isLoading: false } as const;
 }

@@ -6,13 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Catalog from "./pages/Catalog";
 import PhoneDetail from "./pages/PhoneDetail";
-import AdminLogin from "./pages/AdminLogin";
-import AdminDashboard from "./pages/AdminDashboard";
-import AdminPhones from "./pages/AdminPhones";
-import AdminCampaigns from "./pages/AdminCampaigns";
-import AdminSettings from "./pages/AdminSettings";
-import AdminAnalytics from "./pages/AdminAnalytics";
 import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Services from "./pages/Services";
 
 const queryClient = new QueryClient();
 
@@ -26,12 +22,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/phone/:id" element={<PhoneDetail />} />
-          <Route path="/admin" element={<AdminLogin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route path="/admin/phones" element={<AdminPhones />} />
-          <Route path="/admin/campaigns" element={<AdminCampaigns />} />
-          <Route path="/admin/settings" element={<AdminSettings />} />
-          <Route path="/admin/analytics" element={<AdminAnalytics />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

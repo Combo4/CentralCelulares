@@ -1,59 +1,97 @@
-import { Phone, MessageCircle, Search, Menu, X } from "lucide-react";
+import { Search, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import logo from "/central-celulares-logo.png";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState("");
 
   return (
-    <nav className="sticky top-0 z-50 glass border-b">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-              <Phone className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="font-display text-xl font-bold">PhoneHub</span>
+    <header className="sticky top-0 z-50 shadow-sm">
+      {/* Top bar like old site */}
+      <div className="top-bar">
+        <p>Bienvenidos a Central Celulares</p>
+      </div>
+
+      {/* Main header */}
+      <div className="header">
+        <div className="header-container">
+          {/* Logo */}
+          <Link to="/" className="logo-box">
+            <img
+              src={logo}
+              alt="Central Celulares"
+              className="logo-image"
+            />
           </Link>
 
-          <div className="hidden md:flex items-center gap-6">
-            <Link to="/catalog" className="text-muted-foreground hover:text-foreground transition-colors">
-              Catalog
-            </Link>
-            <Link to="/admin" className="text-muted-foreground hover:text-foreground transition-colors">
-              Admin
-            </Link>
-          </div>
+          {/* Gray bar containing nav + search, like old header-right area */}
+          <div className="header-right hidden md:flex">
+            {/* Navigation items (center) */}
+            <nav className="nav-menu flex items-center gap-8 text-sm font-medium">
+              <Link to="/" className="nav-link">
+                Inicio
+              </Link>
+              <Link to="/catalog" className="nav-link">
+                Productos
+              </Link>
+              <Link to="/services" className="nav-link">
+                Servicios
+              </Link>
+              <Link to="/about" className="nav-link">
+                Nosotros
+              </Link>
+            </nav>
 
-          <div className="hidden md:flex items-center gap-4">
-            <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-              <Input
-                placeholder="Search phones..."
-                className="pl-10 w-64"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-              />
+            {/* Search on the right, matching old header-actions */}
+            <div className="header-actions">
+              <div className="search-bar">
+                <input
+                  type="text"
+                  placeholder="Buscar productos..."
+                  className="search-input"
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+                <button className="search-button" type="button">
+                  <Search className="w-4 h-4" />
+                </button>
+              </div>
             </div>
           </div>
 
-          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+          {/* Mobile menu button */}
+          <button
+            className="md:hidden text-white px-4"
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle navigation"
+          >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 
+        {/* Mobile nav */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col gap-4">
-              <Link to="/catalog" className="text-muted-foreground hover:text-foreground">Catalog</Link>
-              <Link to="/admin" className="text-muted-foreground hover:text-foreground">Admin</Link>
+          <div className="md:hidden bg-[#3A3A3A] py-3 border-t border-white/10">
+            <div className="flex flex-col gap-2 px-4">
+              <Link to="/" className="text-gray-200 hover:text-white">
+                Inicio
+              </Link>
+              <Link to="/catalog" className="text-gray-200 hover:text-white">
+                Productos
+              </Link>
+              <Link to="/services" className="text-gray-200 hover:text-white">
+                Servicios
+              </Link>
+              <Link to="/about" className="text-gray-200 hover:text-white">
+                Nosotros
+              </Link>
             </div>
           </div>
         )}
       </div>
-    </nav>
+    </header>
   );
 }

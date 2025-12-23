@@ -1,6 +1,5 @@
-import { supabase } from "@/integrations/supabase/client";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import type { Campaign, CampaignPhone } from "@/types/database";
+// Campaign-related hooks were only used by the admin panel and are now unused.
+// This file is left as a stub.
 
 export function useActiveCampaigns() {
   return useQuery({

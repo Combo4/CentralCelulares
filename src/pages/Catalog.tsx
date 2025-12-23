@@ -24,8 +24,49 @@ export default function Catalog() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row gap-8">
+      <main className="main-content">
+        <div className="container">
+          <h1 className="page-title">Celulares</h1>
+
+          {/* Keep modern filters but inside a controls row */}
+          <div className="controls mb-6 flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
+            <div className="w-full max-w-md">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
+                <Input
+                  placeholder="Buscar productos..."
+                  className="pl-10"
+                  value={filters.search || ""}
+                  onChange={(e) => updateFilter("search", e.target.value)}
+                />
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-muted-foreground hidden sm:inline-block">
+                Ordenar por:
+              </span>
+              <Select
+                value={filters.sortBy || ""}
+                onValueChange={(v) => updateFilter("sortBy", v as PhoneFilters["sortBy"])}
+              >
+                <SelectTrigger className="w-[200px] sort-select border border-primary/40">
+                  <SelectValue placeholder="Por defecto" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="newest">Más recientes</SelectItem>
+                  <SelectItem value="price_asc">Precio: menor a mayor</SelectItem>
+                  <SelectItem value="price_desc">Precio: mayor a menor</SelectItem>
+                  <SelectItem value="popular">Más populares</SelectItem>
+                </SelectContent>
+              </Select>
+              <Button variant="ghost" size="sm" onClick={() => setFilters({})}>
+                <X className="w-4 h-4 mr-1" /> Limpiar
+              </Button>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-8">
           {/* Filters Sidebar */}
           <aside className={`md:w-64 shrink-0 ${showFilters ? "block" : "hidden md:block"}`}>
             <div className="sticky top-24 space-y-6">
@@ -88,7 +129,7 @@ export default function Catalog() {
           </aside>
 
           {/* Products Grid */}
-          <main className="flex-1">
+          <div className="flex-1">
             <div className="flex items-center justify-between mb-6">
               <p className="text-muted-foreground">
                 {phones?.length || 0} phones found
@@ -116,9 +157,10 @@ export default function Catalog() {
                 <p>No phones found matching your criteria.</p>
               </div>
             )}
-          </main>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
+  </div>
   );
 }
