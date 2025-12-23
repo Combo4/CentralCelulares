@@ -212,9 +212,9 @@
   }
 
   .logo-image {
-    height: 5.5rem; /* larger logo, still contained in black header */
+    height: 6rem; /* slightly larger logo in black header */
     width: auto;
-    max-width: 380px;
+    max-width: 420px;
     object-fit: contain;
     display: block;
   }
