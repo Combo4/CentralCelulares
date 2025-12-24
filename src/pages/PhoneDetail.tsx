@@ -47,9 +47,9 @@ export default function PhoneDetail() {
       <div className="min-h-screen bg-background">
         <Navbar />
         <div className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-2xl font-bold mb-4">Phone not found</h1>
+          <h1 className="text-2xl font-bold mb-4">Celular no encontrado</h1>
           <Link to="/catalog">
-            <Button>Back to Catalog</Button>
+            <Button>Volver al catálogo</Button>
           </Link>
         </div>
       </div>
@@ -62,12 +62,12 @@ export default function PhoneDetail() {
     : 0;
 
   const specs = [
-    { icon: Monitor, label: "Display", value: phone.display_size },
-    { icon: Cpu, label: "Processor", value: phone.processor },
+    { icon: Monitor, label: "Pantalla", value: phone.display_size },
+    { icon: Cpu, label: "Procesador", value: phone.processor },
     { icon: HardDrive, label: "RAM", value: phone.ram },
     { icon: Camera, label: "Camera", value: phone.camera },
-    { icon: Battery, label: "Battery", value: phone.battery },
-    { icon: Calendar, label: "Released", value: phone.release_year?.toString() },
+    { icon: Battery, label: "Batería", value: phone.battery },
+    { icon: Calendar, label: "Lanzamiento", value: phone.release_year?.toString() },
   ];
 
   return (
@@ -77,7 +77,7 @@ export default function PhoneDetail() {
       <div className="container mx-auto px-4 py-8">
         <Link to="/catalog" className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="w-4 h-4" />
-          Back to Catalog
+          Volver al catálogo
         </Link>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
@@ -87,12 +87,12 @@ export default function PhoneDetail() {
               <img src={phone.images[0]} alt={phone.model} className="w-full h-full object-cover" />
             ) : (
               <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                No Image
+                Sin imagen
               </div>
             )}
             <div className="absolute top-4 left-4 flex flex-col gap-2">
-              {phone.is_featured && <span className="featured-badge">Featured</span>}
-              {hasDiscount && <span className="sale-badge">-{discountPercent}% OFF</span>}
+              {phone.is_featured && <span className="featured-badge">Destacado</span>}
+              {hasDiscount && <span className="sale-badge">-{discountPercent}% dto.</span>}
             </div>
           </div>
 
@@ -120,7 +120,7 @@ export default function PhoneDetail() {
 
             {phone.storage_options && phone.storage_options.length > 0 && (
               <div className="mb-6">
-                <p className="text-sm text-muted-foreground mb-2">Storage Options</p>
+                <p className="text-sm text-muted-foreground mb-2">Opciones de almacenamiento</p>
                 <div className="flex flex-wrap gap-2">
                   {phone.storage_options.map((storage) => (
                     <Badge key={storage} variant="outline" className="text-sm px-3 py-1">
@@ -135,7 +135,7 @@ export default function PhoneDetail() {
 
             <Button onClick={handleWhatsAppClick} size="lg" className="btn-whatsapp w-full md:w-auto">
               <MessageCircle className="w-5 h-5" />
-              Contact on WhatsApp
+              Contactar por WhatsApp
             </Button>
 
             <Separator className="my-8" />
@@ -143,7 +143,7 @@ export default function PhoneDetail() {
             {/* Specs */}
             <Card>
               <CardContent className="p-6">
-                <h3 className="font-display font-bold text-lg mb-4">Specifications</h3>
+                <h3 className="font-display font-bold text-lg mb-4">Especificaciones</h3>
                 <div className="grid grid-cols-2 gap-4">
                   {specs.map(({ icon: Icon, label, value }) =>
                     value ? (

@@ -71,9 +71,9 @@ export default function Catalog() {
           <aside className={`md:w-64 shrink-0 ${showFilters ? "block" : "hidden md:block"}`}>
             <div className="sticky top-24 space-y-6">
               <div className="flex items-center justify-between">
-                <h2 className="font-display font-bold text-lg">Filters</h2>
+                <h2 className="font-display font-bold text-lg">Filtros</h2>
                 <Button variant="ghost" size="sm" onClick={() => setFilters({})}>
-                  Clear All
+                  Borrar todo
                 </Button>
               </div>
 
@@ -81,7 +81,7 @@ export default function Catalog() {
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
                   <Input
-                    placeholder="Search phones..."
+                    placeholder="Buscar celulares..."
                     className="pl-10"
                     value={filters.search || ""}
                     onChange={(e) => updateFilter("search", e.target.value)}
@@ -89,7 +89,7 @@ export default function Catalog() {
                 </div>
 
                 <div>
-                  <Label className="text-sm font-medium mb-2 block">Brands</Label>
+                  <Label className="text-sm font-medium mb-2 block">Marcas</Label>
                   <div className="space-y-2">
                     {brands?.map((brand) => (
                       <div key={brand.id} className="flex items-center gap-2">
@@ -111,16 +111,16 @@ export default function Catalog() {
                 </div>
 
                 <div>
-                  <Label className="text-sm font-medium mb-2 block">Sort By</Label>
+                  <Label className="text-sm font-medium mb-2 block">Ordenar por</Label>
                   <Select value={filters.sortBy || ""} onValueChange={(v) => updateFilter("sortBy", v as PhoneFilters["sortBy"])}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Default" />
+                      <SelectValue placeholder="Por defecto" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="newest">Newest First</SelectItem>
-                      <SelectItem value="price_asc">Price: Low to High</SelectItem>
-                      <SelectItem value="price_desc">Price: High to Low</SelectItem>
-                      <SelectItem value="popular">Most Popular</SelectItem>
+                      <SelectItem value="newest">Más recientes primero</SelectItem>
+                      <SelectItem value="price_asc">Precio: menor a mayor</SelectItem>
+                      <SelectItem value="price_desc">Precio: mayor a menor</SelectItem>
+                      <SelectItem value="popular">Más populares</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -132,11 +132,11 @@ export default function Catalog() {
           <div className="flex-1">
             <div className="flex items-center justify-between mb-6">
               <p className="text-muted-foreground">
-                {phones?.length || 0} phones found
+                {phones?.length || 0} celulares encontrados
               </p>
               <Button variant="outline" className="md:hidden" onClick={() => setShowFilters(!showFilters)}>
                 <SlidersHorizontal className="w-4 h-4 mr-2" />
-                Filters
+                Filtros
               </Button>
             </div>
 
@@ -154,7 +154,7 @@ export default function Catalog() {
               </div>
             ) : (
               <div className="text-center py-16 text-muted-foreground">
-                <p>No phones found matching your criteria.</p>
+                <p>No se encontraron celulares que coincidan con tus criterios.</p>
               </div>
             )}
           </div>

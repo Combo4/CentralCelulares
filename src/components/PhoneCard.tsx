@@ -25,13 +25,13 @@ export function PhoneCard({ phone }: PhoneCardProps) {
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-              No Image
+              Sin imagen
             </div>
           )}
           
           <div className="absolute top-3 left-3 flex flex-col gap-2">
             {phone.is_featured && (
-              <span className="featured-badge">Featured</span>
+              <span className="featured-badge">Destacado</span>
             )}
             {hasDiscount && (
               <span className="sale-badge">-{discountPercent}%</span>
