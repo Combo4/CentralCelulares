@@ -29,6 +29,7 @@ import xlsx from "xlsx";
 
 const EXCEL_PATH = path.resolve("data", "products.xlsx");
 const OUTPUT_PATH = path.resolve("public", "data", "products.json");
+const DOCS_OUTPUT_PATH = path.resolve("docs", "data", "products.json");
 
 function parseBool(value) {
   if (typeof value === "boolean") return value;
@@ -110,6 +111,15 @@ async function main() {
 
   await fs.mkdir(path.dirname(OUTPUT_PATH), { recursive: true });
   await fs.writeFile(OUTPUT_PATH, JSON.stringify(products, null, 2), "utf8");
+
+  // Also keep the docs/ copy in sync for the static (GitHub Pages) build
+  try {
+    await fs.mkdir(path.dirname(DOCS_OUTPUT_PATH), { recursive: true });
+    await fs.writeFile(DOCS_OUTPUT_PATH, JSON.stringify(products, null, 2), "utf8");
+    console.log(`Wrote ${products.length} products to`, DOCS_OUTPUT_PATH);
+  } catch (err) {
+    console.warn("Failed to write docs/data/products.json:", err.message);
+  }
 
   console.log(`Wrote ${products.length} products to`, OUTPUT_PATH);
 }
