@@ -13,13 +13,21 @@ export function PhoneCard({ phone }: PhoneCardProps) {
     ? Math.round(((phone.price - phone.sale_price!) / phone.price) * 100)
     : 0;
 
+  const baseUrl = (import.meta as any).env?.BASE_URL || "/";
+  const rawImage = phone.images?.[0];
+  const imageSrc = rawImage
+    ? rawImage.startsWith("http")
+      ? rawImage
+      : `${baseUrl.replace(/\/$/, "")}/${rawImage.replace(/^\//, "")}`
+    : undefined;
+
   return (
     <Link to={`/phone/${phone.id}`}>
       <Card className="card-hover overflow-hidden group cursor-pointer h-full">
         <div className="relative aspect-square overflow-hidden bg-secondary">
-          {phone.images?.[0] ? (
+          {imageSrc ? (
             <img
-              src={phone.images[0]}
+              src={imageSrc}
               alt={phone.model}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
