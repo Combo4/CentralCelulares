@@ -27,7 +27,7 @@ import xlsx from "xlsx";
 //   is_featured         -> TRUE/FALSE or 1/0
 //   is_published        -> TRUE/FALSE or 1/0
 
-const EXCEL_PATH = path.resolve("data", "products.xlsx");
+const EXCEL_PATH = path.resolve("data", "products-paraguay.xlsx");
 const OUTPUT_PATH = path.resolve("public", "data", "products.json");
 
 function parseBool(value) {
